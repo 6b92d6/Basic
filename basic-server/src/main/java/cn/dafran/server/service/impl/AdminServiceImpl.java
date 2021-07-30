@@ -3,7 +3,7 @@ package cn.dafran.server.service.impl;
 
 import cn.dafran.server.mapper.AdminMapper;
 import cn.dafran.server.pojo.Admin;
-import cn.dafran.server.service.AdminService;
+import cn.dafran.server.service.IAdminService;
 import cn.dafran.server.untils.JwtTokenUtil;
 import cn.dafran.server.untils.RespBean;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -31,7 +31,7 @@ import java.util.Map;
  * @since 2021-07-13
  */
 @Service
-public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements AdminService {
+public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements IAdminService {
 
     @Autowired
     private AdminMapper adminMapper;

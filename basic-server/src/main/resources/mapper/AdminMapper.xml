@@ -10,9 +10,11 @@
         <result column="enabled" property="enabled" />
     </resultMap>
 
+    
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id, username, password, enabled
     </sql>
+
 
 </mapper>

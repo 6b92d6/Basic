@@ -4,7 +4,7 @@ import cn.dafran.server.config.security.JwtAuthencationTokenFilter;
 import cn.dafran.server.config.security.RestAuthorizationEntryPoint;
 import cn.dafran.server.config.security.RestfulAccessDeniedHander;
 import cn.dafran.server.pojo.Admin;
-import cn.dafran.server.service.AdminService;
+import cn.dafran.server.service.IAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,7 +27,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private AdminService adminService;
+    private IAdminService IAdminService;
     @Autowired
     private RestAuthorizationEntryPoint restAuthorizationEntryPoint;
     @Autowired
@@ -91,7 +91,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public UserDetailsService userDetailsService(){
         return username -> {
-            Admin admin = adminService.getAdminsByUserName(username);
+            Admin admin = IAdminService.getAdminsByUserName(username);
             if (null != admin){
                 return admin;
             }

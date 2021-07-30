@@ -1,6 +1,6 @@
 package cn.dafran.server.controller;
 
-import cn.dafran.server.service.AdminService;
+import cn.dafran.server.service.IAdminService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AdminController {
 
     @Autowired
-    private AdminService adminService;
+    private IAdminService adminService;
 
 
 }

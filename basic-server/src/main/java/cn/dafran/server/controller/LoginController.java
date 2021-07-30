@@ -2,7 +2,7 @@ package cn.dafran.server.controller;
 
 import cn.dafran.server.pojo.Admin;
 import cn.dafran.server.pojo.AdminLoginParam;
-import cn.dafran.server.service.AdminService;
+import cn.dafran.server.service.IAdminService;
 import cn.dafran.server.untils.RespBean;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -25,7 +25,7 @@ import java.security.Principal;
 public class LoginController {
 
     @Autowired
-    AdminService adminService;
+    IAdminService adminService;
 
     @ApiOperation(value = "登录之后返回token")
     @RequestMapping(value = "/login",method = RequestMethod.POST)

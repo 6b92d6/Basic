@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
  * @author 6b92d6
  * @since 2021-07-13
  */
-public interface AdminService extends IService<Admin> {
+public interface IAdminService extends IService<Admin> {
 
     /**
      * 登录之后返回token
