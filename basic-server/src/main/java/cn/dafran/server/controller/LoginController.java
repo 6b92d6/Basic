@@ -20,7 +20,7 @@ import java.security.Principal;
  * @Author 6b92d6
  * @Description 登录
  */
-@Api(tags = "Swagger登录")
+@Api(tags = "登录管理")
 @RestController
 public class LoginController {
 
@@ -30,19 +30,23 @@ public class LoginController {
     @ApiOperation(value = "登录之后返回token")
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public RespBean login(@RequestBody AdminLoginParam adminLoginParam, HttpServletRequest request){
-        return adminService.login(adminLoginParam.getUsername(),adminLoginParam.getPassword(),adminLoginParam.getCode(),request);
+        return adminService.login(adminLoginParam.getUsername(),
+                                adminLoginParam.getPassword(),
+                                adminLoginParam.getCode(),request);
     }
 
     @ApiOperation(value ="获取当前登录用户信息")
     @RequestMapping(value = "/admin/info",method = RequestMethod.GET)
-    public Admin getAdminsinfo(Principal principal) {
+    public RespBean getAdminsinfo(Principal principal) {
+        // 没有登录信息
         if (null == principal) {
-            return  null;
+            return  RespBean.error("当前登录用户信息查询错误");
         }
         String username = principal.getName();
         Admin admin = adminService.getAdminsByUserName(username);
         admin.setPassword(null);
-        return admin;
+        admin.setRoles(adminService.getRoles(admin.getId()));
+        return RespBean.success("logUser",admin);
     }
 
     @ApiOperation(value = "退出登录")

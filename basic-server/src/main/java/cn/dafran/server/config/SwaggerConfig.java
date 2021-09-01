@@ -40,8 +40,8 @@ public class SwaggerConfig {
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
                 .title("Swagger接口文档")
-                .description("主要技术栈：Mybatis-Plus、Security、druid、Swagger2、FastDFS")
-                .contact(new Contact("6b92d6","http:localhost:8089/doc.html","6b92d6g@gmail.com"))
+                .description("主要技术栈：Mybatis-Plus、Security、Swagger2")
+                .contact(new Contact("6b92d6","http:localhost:8188/doc.html","6b92d6g@gmail.com"))
                 //许可证
                 .license("Home")
                 .version("1.0")
