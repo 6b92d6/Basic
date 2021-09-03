@@ -40,13 +40,15 @@ public class LoginController {
     public RespBean getAdminsinfo(Principal principal) {
         // 没有登录信息
         if (null == principal) {
-            return  RespBean.error("当前登录用户信息查询错误");
+            return RespBean.error("没有此用户信息");
+            //return  null;
         }
         String username = principal.getName();
         Admin admin = adminService.getAdminsByUserName(username);
         admin.setPassword(null);
         admin.setRoles(adminService.getRoles(admin.getId()));
-        return RespBean.success("logUser",admin);
+        //return admin;
+        return RespBean.success("admin",admin);
     }
 
     @ApiOperation(value = "退出登录")
