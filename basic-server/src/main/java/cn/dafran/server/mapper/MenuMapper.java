@@ -2,6 +2,7 @@ package cn.dafran.server.mapper;
 
 import cn.dafran.server.pojo.Menu;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -12,9 +13,8 @@ import java.util.List;
  * </p>
  *
  * @author 6b92d6
- * @since 2021-07-26
  */
-@Component
+@Mapper
 public interface MenuMapper extends BaseMapper<Menu> {
 
     /**

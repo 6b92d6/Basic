@@ -12,8 +12,10 @@ import java.util.Properties;
  * @Author 6b92d6
  * @Description 验证码配置类
  */
+/*
 @Configuration
 public class CaptchaConfig {
+
 
     @Bean
     DefaultKaptcha defaultKaptcha() {
@@ -50,4 +52,6 @@ public class CaptchaConfig {
         return defaultKaptcha;
     }
 
+
 }
+*/

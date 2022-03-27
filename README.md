@@ -6,5 +6,5 @@
   - 首先npm install，等待下载完毕
   - npm run serve 启动前端项目
 
-
+用户密码都是123
 Swagger 路径为：http://localhost:8188/doc.html

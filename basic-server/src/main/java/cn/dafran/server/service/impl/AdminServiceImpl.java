@@ -54,22 +54,30 @@ public class AdminServiceImpl extends ServiceImpl<AdminMapper, Admin> implements
      * 登录之后返回token
      * @param username
      * @param password
-     * @param code
+     * @param
      * @param request
      * @return
      */
-    @Override
+/*    @Override
     public RespBean login(String username, String password, String code, HttpServletRequest request) {
         //将Session中生成的验证码进行判断对比
         String capcha = (String) request.getSession().getAttribute("captcha");
         //没有输入验证码或者验证码不匹配
         if (StringUtils.isEmpty(code) || !capcha.equalsIgnoreCase(code)){
             return RespBean.error("验证码输入错误，请重新输入");
-        }
+        }*/
+    @Override
+    public RespBean login(String username, String password, HttpServletRequest request) {
+        //将Session中生成的验证码进行判断对比
+        /*String capcha = (String) request.getSession().getAttribute("captcha");
+        //没有输入验证码或者验证码不匹配
+        if (StringUtils.isEmpty(code) || !capcha.equalsIgnoreCase(code)){
+            return RespBean.error("验证码输入错误，请重新输入");
+        }*/
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
         //没有用户或者密码不正确 1.判断状态，用户信息为空
         if (null==userDetails ){
-            return RespBean.error("用户名不正确");
+            return RespBean.error("用户名不存在");
         }
         if (!passwordEncoder.matches(password,userDetails.getPassword())) {
             return RespBean.error("密码不正确");

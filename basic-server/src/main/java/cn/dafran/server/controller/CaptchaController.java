@@ -20,6 +20,7 @@ import java.io.IOException;
  * @Author 6b92d6
  * @Description 验证码
  */
+/*
 @Api(tags = "验证码")
 @RestController
 public class CaptchaController {
@@ -67,3 +68,4 @@ public class CaptchaController {
         //-------------------生成验证码 end --------------------------
     }
 }
+*/

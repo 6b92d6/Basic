@@ -1,12 +1,9 @@
 package cn.dafran.server.service;
 
-
-
 import cn.dafran.server.pojo.Admin;
 import cn.dafran.server.pojo.Role;
 import cn.dafran.server.untils.RespBean;
 import com.baomidou.mybatisplus.extension.service.IService;
-
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
@@ -24,11 +21,11 @@ public interface IAdminService extends IService<Admin> {
      * 登录之后返回token
      * @param username
      * @param password
-     * @param code
+     * @param
      * @param request
      * @return
-     */
-    RespBean login(String username, String password, String code, HttpServletRequest request);
+    RespBean login(String username, String password, String code, HttpServletRequest request);*/
+    RespBean login(String username, String password, HttpServletRequest request);
 
     /**
      * 根据用户名获取用户

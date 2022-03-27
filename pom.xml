@@ -5,7 +5,6 @@
 
     <modules>
         <module>basic-server</module>
-        <module>basic-generator</module>
     </modules>
 
     <parent>

@@ -12,7 +12,6 @@ import java.util.List;
  * </p>
  *
  * @author 6b92d6
- * @since 2021-07-26
  */
 @Component
 public interface RoleMapper extends BaseMapper<Role> {
