@@ -19,7 +19,6 @@ import java.util.List;
  * </p>
  *
  * @author 6b92d6
- * @since 2021-07-26
  */
 @Api(tags = "菜单")
 @RestController

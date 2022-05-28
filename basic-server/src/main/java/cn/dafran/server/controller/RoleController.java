@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author 6b92d6
- * @since 2021-07-26
  */
 @RestController
 @RequestMapping("/role")
