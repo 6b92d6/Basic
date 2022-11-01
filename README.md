@@ -1,10 +1,10 @@
-> ²Î¿¼ÔÆE°ì£¬³é³ö×Ô¼ºÏÈÑ§Ï°µÄ²¿·Ö£¬¼ò»¯ÁËºÜ¶à
+> ç®€åŒ–
 
-- basic-serverÎªJavaºó¶Ë²¿·Ö
-- sqlÎª5.7°æ±¾µÄ±àÂë¸ñÊ½Îªutf8mb4£¬¿É¸ù¾İsql°æ±¾×ÃÇéĞŞ¸Ä
-- basic-vueÎªÇ°¶Ë²¿·Ö£¬²ÉÓÃÁËvue+element-ui£¬½øÈëoriginÄ¿Â¼ÔÙ½øĞĞ²Ù×÷
-  - Ê×ÏÈnpm install£¬µÈ´ıÏÂÔØÍê±Ï
-  - npm run serve Æô¶¯Ç°¶ËÏîÄ¿
+- basic-serverä¸ºJavaåç«¯éƒ¨åˆ†
+- sqlä¸º5.7ç‰ˆæœ¬çš„ç¼–ç æ ¼å¼ä¸ºutf8mb4ï¼Œå¯æ ¹æ®sqlç‰ˆæœ¬é…Œæƒ…ä¿®æ”¹
+- basic-vueä¸ºå‰ç«¯éƒ¨åˆ†ï¼Œé‡‡ç”¨äº†vue+element-uiï¼Œè¿›å…¥originç›®å½•å†è¿›è¡Œæ“ä½œ
+  - é¦–å…ˆnpm installï¼Œç­‰å¾…ä¸‹è½½å®Œæ¯•
+  - npm run serve å¯åŠ¨å‰ç«¯é¡¹ç›®
 
-ÓÃ»§ÃÜÂë¶¼ÊÇ123
-Swagger Â·¾¶Îª£ºhttp://localhost:8188/doc.html
+ç”¨æˆ·å¯†ç éƒ½æ˜¯123
+Swagger è·¯å¾„ä¸ºï¼šhttp://localhost:8188/doc.html
