@@ -1,4 +1,4 @@
-> 简化
+> ==简化==
 
 - basic-server为Java后端部分
 - sql为5.7版本的编码格式为utf8mb4，可根据sql版本酌情修改
