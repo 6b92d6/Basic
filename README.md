@@ -1,5 +1,5 @@
 > ==简化==
-
+----  测试
 - basic-server为Java后端部分
 - sql为5.7版本的编码格式为utf8mb4，可根据sql版本酌情修改
 - basic-vue为前端部分，采用了vue+element-ui，进入origin目录再进行操作
